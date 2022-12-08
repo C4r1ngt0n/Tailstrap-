@@ -1,0 +1,54 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/accordion";
+
+/*main*/
+.accordion-button:not(.collapsed)::after{
+    filter: brightness(0) invert(1);
+  }
+  .accordion-button:not(.collapsed){
+    background: rgb(76,29,149);
+    background: linear-gradient(45deg, rgba(76,29,149,1) 0%, rgba(131,24,67,1) 100%);
+    color: white;
+  }
+  .accordion-button:focus{
+    box-shadow: none;
+  }
+  .collapse {
+  visibility: visible;
+  }
+  .accordion-item{
+    border-bottom: 0;
+  }
+.rBackground{
+  background-image: url(./image/s3/BitmapMobile.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.-translate-y-oval-3{
+  --tw-translate-y: -29rem;
+}
+.-translate-x-oval-3{
+  --tw-translate-x: 8rem;
+}
+.-translate-y-oval-4{
+  --tw-translate-y: -42rem;
+}
+.-translate-x-oval-4{
+  --tw-translate-x: 13rem;
+}
+.translate-x-oval-5{
+  --tw-translate-x: 28rem;
+}
+@media (min-width:500px) {
+  .rBackground{
+    background-image: url(./image/s3/Bitmap.png);
+  }      
+}
+hr{
+  margin:50px 0;
+}
