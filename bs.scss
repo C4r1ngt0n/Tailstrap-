@@ -5,15 +5,90 @@
 @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/accordion";
-
+@import "../node_modules/bootstrap/scss/dropdown";
+@import "../node_modules/bootstrap/scss/navbar";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Source+Sans+Pro:wght@400;600;700&display=swap');
 /*main*/
+*{
+  font-family: 'Poppins', sans-serif;
+  color: #333333;
+}
+nav{
+  background-color: #333333;
+  position: fixed;
+}
+.SourceSans{
+  font-family: 'Source Sans Pro', sans-serif;
+  &__400{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+  }
+  &__600{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+  }
+  &__700{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+  }
+}
+.poppins{
+  font-family: 'Poppins', sans-serif;
+  &__600{
+    font-weight: 600;
+  }
+  &__700{
+    font-weight: 700;
+  }
+  &__txtShadow{
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+}
+.fs-16{
+  font-size: 16px;
+  line-height: 24px;
+}
+.fs-56{
+  font-size: 40px ;
+  line-height: 48px;
+  @media (min-width:768px) { 
+  font-size: 56px;
+  line-height: 64px;
+  }
+}
+.ButtonSize{
+  min-width: 170px;
+  max-width: 170px;
+  min-height: 46px;
+  max-height: 46px;
+}
+section,footer{
+    padding: 3rem 0;
+}
+.wrapper{
+  width: 368px;
+  margin: 0 auto;
+  @media (min-width:640px) {
+    width: 540px;
+  }
+  @media (min-width:768px) {
+    width: 568px;
+  }
+  @media (min-width:1024px) {
+    width: 924px;
+  }
+  @media (min-width:1440px) {
+    width: 1140px;
+  }
+  
+}
 .accordion-button:not(.collapsed)::after{
     filter: brightness(0) invert(1);
   }
   .accordion-button:not(.collapsed){
-    background: rgb(76,29,149);
-    background: linear-gradient(45deg, rgba(76,29,149,1) 0%, rgba(131,24,67,1) 100%);
-    color: white;
+    background: white;
+    
+    color: black;
   }
   .accordion-button:focus{
     box-shadow: none;
@@ -52,3 +127,12 @@
 hr{
   margin:50px 0;
 }
+.s1ResponsiveSizeDiv{
+  height: 100%;
+  width: 100%;
+  @media (min-width:500px) {
+    height: 100%;
+    width: 100%;
+  }
+}
+

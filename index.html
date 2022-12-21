@@ -1,271 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="bs.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="bs.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>Document</title>
-</head>
-<body>
-    <div class="w-screen h-screen from-cyan-400 to-pink-600 bg-gradient-to-tr bg-fixed grid grid-cols-1 md:grid-cols-2 md:justify-center md:content-center">
-        <div class="px-5 pt-5 w-full grid grid-cols-1 content-center">
-          <div class="mb-5">
-              <h2 class="text-7xl md:text-9xl font-bold text-white">Omnis Voluptas</h2>
+    <style>
+      header{
+        height: 85vh;
+        overflow: hidden;
+      }
+      .bgImage{
+        background-image: url(./image/hero/mobilebg.jpg);
+        background-size: cover;
+        background-position: center;
+      }
+      @media (min-width:1440px) {
+        .bgImage{
+          background-image: url(./image/hero/bg1440p.jpg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="w-screen bg-gradient-to-tr from-purple-500 to-indigo-700 bg-fixed">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Ninth navbar example">
+        <div class="container-xl">
+          <a class="navbar-brand" href="#">Retail</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07XL" aria-controls="navbarsExample07XL" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="navbar-collapse collapse" id="navbarsExample07XL">
+            <ul class="navbar-nav me-auto mb-lg-0 mb-2">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Dropdown</a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
           </div>
-          <div class="mb-5 pl-2 text-white">
-              <p class="text-xm">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.</p>
+        </div>
+      </nav>
+      <div class="grid h-full grid-cols-1 sm:content-start md:justify-center lg:container lg:mx-auto lg:grid-cols-2 lg:content-center" style="max-width: 1440px;">
+        <div class="grid h-auto w-full grid-cols-1 content-center px-5 pt-5">
+          <div id="social" class="flex mb-5">
+            <a href=""><div class="bg-white mr-2 h-7 w-7 ring-slate-800 rounded-full grid justify-center content-center animate__bounceIn"><i class="fa-brands fa-instagram"></i></div></a>
+            <div class="bg-white mr-2  h-7 w-7 ring-slate-800 rounded-full grid justify-center content-center animate__bounceIn"><i class="fa-brands fa-facebook"></i></div>
+            <div class="bg-white mr-2  h-7 w-7 ring-slate-800 rounded-full grid justify-center content-center animate__bounceIn"><i class="fa-brands fa-twitter"></i></i></div>
+          </div>
+          <div class="mb-5">
+            <h2 class="fs-56 poppins__700 font-bold text-white md:text-8xl">
+              Omnis <br />
+              Voluptas
+            </h2>
+          </div>
+          <div class="my-5 pl-2 text-white">
+            <p class="fs-16 SourceSans text-white">
+              Temporibus autem quibusdam et aut officiis debitis<br />
+              aut rerum necessitatibus saepe eveniet ut et<br />
+              voluptates repudiandae sint et molestiae non<br />
+              recusandae.
+            </p>
+          </div>
+          <div class="mt-5">
+            <button class="ButtonSize rounded-3xl bg-orange-400 pt-2 pb-2 font-bold text-white hover:bg-orange-400 hover:ring-1">Explore</button>
+          </div>
+        </div>
+        <div class="relative h-screen overflow-hidden h-s">
+          <img class="translate-y-10 scale-75 " src="./image/hero/bgPNG.png" alt="" />
+        </div>
+      </div>
+      
+    </header>
+    <section id="1">
+      <div class="container mx-auto">
+        <div class="wrapper">
+          <div class="grid grid-cols-1 lg:flex lg:items-center justify-center">
+            <div class="w-full lg:w-1/2">
+              <div class="p-3">
+                <h5 class="fs-16 poppins__700 font-semibold uppercase mb-5">Quis autem</h5>
+                <h2 class="fs-56 poppins__txtShadow font-bold sm:text-4xl mt-5 mb-10">
+                  Corporis suscipit<br />
+                  laboriosam
+                </h2>
+              </div>
+              <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingOne">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      <p class="font-bold">Totam rem aperiam</p>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                      <p class="font-bold">Eaque ipsa quae</p>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="flush-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      <p class="font-bold">Inventore veritatis</p>
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class=" w-full lg:w-1/2 flex justify-end">
+              <div class="overflow-hidden">
+                <img src="./image/s1/rm372-k-210-c14-mockup-text.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="2" class="grid min-h-screen content-center bg-[#FDF2FF]">
+      <div class="grid-col-1 grid w-screen justify-center lg:container lg:mx-auto ">
+        <div class="p-5 lg:grid lg:w-[1150px]">
+          <div class="lg:w-full mb-5 text-lg font-bold uppercase">Nisi ut aliquid</div>
+          <div class="flex flex-col lg:my-5 lg:flex-row lg:justify-between lg:items-end">
+            <div class="">
+              <p class="mb-5 fs-56 font-bold">Ullam corporis <br> suscipit</p>
+            </div>
+            <div class="">
+              <p class="mb-3 f-16 SourceSans__400">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia <br> consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro <br> quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed <br>quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam <br> quaerat voluptatem.</p>
+            </div>
+          </div>
+          <div class="lg:w-full"><a href="">Quis</a> <a href="">Autem</a> <a href="">Reprehenderit</a> <a href="">Voluptate</a> <a href="">Molestiae</a> <a href="">Consequatur</a></div>
+        </div>
+        <div class="grid grid-cols-1 gap-5 lg:flex lg:justify-between px-5">
+          <div class="flex justify-center">
+            <img class="h-auto w-full lg:max-w-[370px]" src="./image/hero/Bitmap.png" />
+          </div>
+          <div class="flex justify-center">
+            <img class="h-auto w-full lg:max-w-[370px]" src="./image/hero/Bitmap (1).png" />
+          </div>
+          <div class="flex justify-center">
+            <img class="h-auto w-full lg:max-w-[370px]" src="./image/hero/Bitmap (2).png" />
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <button class="ButtonSize my-10 mx-auto rounded-full bg-violet-400 from-violet-700 to-violet-500 p-2 text-white hover:bg-gradient-to-tr">All Works</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="3">
+      <div class="container mx-auto ">
+        <div class="wrapper">
+        <div class=" mx-auto 2xl:w-[1150px]">
+          <p class="mb-5 text-center fs-56 font-bold">Fugiat quo</p>
+          <p class="SourceSans fs-16 mb-5 text-center text-sm font-bold">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div class="2xl:w-[1150px] mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-5 grid-rows-3 md:grid-rows-2 md:gap-5 ">
+            <div class="p-5 hover:rounded-xl hover:ring-1 ring-slate-800">
+              <img class="mx-auto hover:rotate-45 animate__bounceIn" src="./image/assets/Group.png" />
+              <p class="my-2 text-center text-xl font-bold">Consequuntur</p>
+              <p class="p-1 SourceSans fs-16 text-center">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+            </div>
+            <div class="p-5 hover:rounded-xl hover:ring-1 ring-slate-800">
+              <img class="mx-auto hover:rotate-45 animate__bounceIn" src="./image/assets/Group 2.png" />
+              <p class="my-2 text-center text-xl font-bold">Consequuntur</p>
+              <p class="p-1 SourceSans fs-16 text-center">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+            </div>
+            <div class="p-5 hover:rounded-xl hover:ring-1 ring-slate-800">
+              <img class="mx-auto hover:rotate-45 animate__bounceIn" src="./image/assets/Group 3.png" />
+              <p class="my-2 text-center text-xl font-bold">Consequuntur</p>
+              <p class="p-1 SourceSans fs-16 text-center">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+            </div>
+            <div class="p-5 hover:rounded-xl hover:ring-1 ring-slate-800">
+              <img class="mx-auto hover:rotate-45 animate__bounceIn" src="./image/assets/Group 4.png" />
+              <p class="my-2 text-center text-xl font-bold">Consequuntur</p>
+              <p class="p-1 SourceSans fs-16 text-center">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+            </div>
+            <div class="p-5 hover:rounded-xl hover:ring-1 ring-slate-800">
+              <img class="mx-auto hover:rotate-45 animate__bounceIn" src="./image/assets/Group 5.png" />
+              <p class="my-2 text-center text-xl font-bold">Consequuntur</p>
+              <p class="p-1 SourceSans fs-16 text-center">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+            </div>
+            <div class="p-5 hover:rounded-xl hover:ring-1 ring-slate-800">
+              <img class="mx-auto hover:rotate-45 animate__bounceIn" src="./image/assets/Group 6.png" />
+              <p class="my-2 text-center text-xl font-bold">Consequuntur</p>
+              <p class="p-1 SourceSans fs-16 text-center">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="4" class="overflow-x-hidden bg-indigo-700 min-h-screen flex " style="align-items: center;">
+      <div class="container mx-auto">
+        <div class="wrapper">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:container lg:mx-auto lg:py-10">
+            <div class="rBackground relative mx-auto mb-5 grid h-96 w-full justify-center overflow-hidden">
+              <img class="-translate-x-5 -translate-y-5 scale-75 hover:scale-90 lg:-translate-x-32 lg:-translate-y-10" src="./image/s3/Oval.png" />
+              <img class="translate-x-44 -translate-y-56 scale-75 hover:scale-90" src="./image/s3/Oval-1.png" />
+              <img class="-translate-x-10 -translate-y-80 scale-75 hover:scale-90" src="./image/s3/Oval-2.png" />
+              <img class="-translate-x-oval-3 -translate-y-oval-3 scale-75 hover:scale-90" src="./image/s3/Oval-3.png" />
+              <img class="-translate-x-oval-4 -translate-y-oval-4 scale-75 hover:scale-90" src="./image/s3/Oval-4.png" />
+            </div>
+            <div>
+              <p class="mb-10 fs-16 font-semibold uppercase text-white">Repellendus</p>
+              <p class="mb-10 fs-56 font-bold text-white">Temporibus quibusdam</p>
+              <p class="mb-5 fs-16 SourceSans text-white">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+              <button class="ButtonSize mb-10 mt-10 h-14 w-1/2 rounded-full bg-orange-300 py-2 font-semibold text-white">Our Team</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="5" class="min-h-screen ">
+      <div class="lg:container lg:mx-auto flex" style="align-items: center;">
+        <div class="wrapper">
+          <p class="fs-56 mb-5 mt-10 text-center font-bold">Officis debitis</p>
+          <p class="fs-16 SourceSans SourceSans__600 mb-5 text-center font-semibold">
+            Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus <br />
+            maiores alias consequatur aut perferendis doloribus asperiores repella.
+          </p>
+          <div class=" gap-10 lg:grid-cols-3 grid lg:flex lg:justify-evenly">
+            <div class="  rounded-xl px-5 pt-10 pb-10 shadow-lg lg:w-96 max-w-[370px]">
+              <img class="mb-5" src="./image/s4/Oval.png" alt="" />
+              <p class="SourceSans SourceSans__400 mb-5">"Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
+              <p class="text-lg font-bold">Evelyn Allen</p>
+            </div>
+            <div class=" rounded-xl px-5 pt-10 pb-10 shadow-lg lg:w-96 max-w-[370px]">
+              <img class="mb-5" src="./image/s4/Oval-1.png" alt="" />
+              <p class="SourceSans SourceSans__400 fs-16 mb-5">"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores"</p>
+              <p class="text-lg font-bold">Malin Quist</p>
+            </div>
+            <div class=" rounded-xl px-5 pt-10 pb-10 shadow-lg lg:w-96 max-w-[370px]">
+              <img class="mb-5" src="./image/s4/Oval-2.png" alt="" />
+              <p class="SourceSans SourceSans__400 fs-16 mb-5">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci numquam eius"</p>
+              <p class="text-lg font-bold">Pan Su</p>
+            </div>
+          </div>
+          <div class="grid grid-cols-2 lg:grid-flow-col lg:grid-cols-1 lg:justify-center">
+            <div class="flex justify-center p-5">
+              <img src="./image/s4/logo/Bitmap-1.png" alt="" />
+            </div>
+            <div class="flex items-center justify-center p-5">
+              <img src="./image/s4/logo/Bitmap-2.png" alt="" style="height:17px ;" />
+            </div>
+            <div class="flex justify-center p-5">
+              <img src="./image/s4/logo/Bitmap-3.png" alt="" />
+            </div>
+            <div class="flex justify-center p-5">
+              <img src="./image/s4/logo/Bitmap-4.png" alt="" />
+            </div>
+            <div class="flex justify-center p-5">
+              <img src="./image/s4/logo/Bitmap-5.png" alt="" />
+            </div>
+            <div class="flex justify-center p-5">
+              <img src="./image/s4/logo/Bitmap.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="6" class="bg-[#FDF2FF] lg:h-screen">
+      <div class="grid grid-cols-1 lg:container lg:mx-auto lg:h-full lg:grid-cols-2 lg:justify-center lg:py-10">
+        <div class="grid content-center ">
+          <div class="p-5">
+            <p class="poppins-700 fs-16 font-bold uppercase">Nisi ut aliquid</p>
+            <p class="fs-56 poppins-700 font-bold">Omnis voluptas assumenda</p>
+            <p class="fs-16 mt-10">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
+            <div class="my-10">
+              <button class="ButtonSize h-10 rounded-full bg-purple-400 font-bold text-white">Our Blog</button>
+            </div>
+          </div>
+        </div>
+        <div class="align-center grid content-center">
+          <div class="mx-auto bg-gradient-to-tr from-violet-500 to-pink-500 lg:scale-150" style="height: 316px; width: 329px;">
+            <div class="grid-col-1 grid h-full w-full translate-x-5 -translate-y-5 items-center rounded-lg p-5" style="background-image:url(./image/afterFooter/cover.png) ; background-size: cover;">
+              <p class="pt-14 text-2xl font-bold text-white">Itaque earum rerum</p>
+              <p class="text-gray-400">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates</p>
+              <div class="mt-5 flex items-center">
+                <img src="./image/s4/Oval.png" class="img-fluid rounded-top" alt="" />
+                <p class="ml-5 font-bold text-white">Adaora Azubuike</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="h-screen" id="footer" style="background-image: url(./image/footer/footerBG.png); background-repeat:repeat;">
+      <div class="lg:container lg:mx-auto lg:py-10">
+        <div class="wrapper">
+        <div class="grid grid-cols-1 justify-center lg:mx-auto lg:w-1/2">
+          <p class="mb-5 text-center text-4xl font-bold">Contact Us</p>
+          <p class="mb-5 text-center font-bold">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.</p>
+          <div class="grid-col-1 grid p-1">
+            <input class="h-10 px-5 ring-1 ring-black" placeholder="Your email" type="email" />
+            <button class="ButtonSize mx-auto mt-5 h-10 rounded-full bg-violet-500 text-white">Send</button>
+          </div>
+          <hr />
+        </div>
+        <div class="grid grid-cols-1 gap-5 lg:grid-cols-3">
+          <div>
+            <ul class="">
+              <p class="text-xl font-bold">Consectetur</p>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Adipiscing</p></a>
+              </li>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Elit</p></a>
+              </li>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Eiusmod</p></a>
+              </li>
+            </ul>
           </div>
           <div>
-              <button class="text-white font-bold bg-orange-300 pt-2 pb-2 rounded-3xl hover:bg-orange-400 hover:ring-1" style="width:150px;">
-                Explore
-              </button>
+            <ul class="">
+              <p class="text-xl font-bold">Tempor</p>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Incididunt</p></a>
+              </li>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Labore</p></a>
+              </li>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Dolore</p></a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <ul class="">
+              <p class="text-xl font-bold">Magna</p>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Aliqua</p></a>
+              </li>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Minim</p></a>
+              </li>
+              <li>
+                <a href=""><p class="fs-16 SourceSans">Veniam</p></a>
+              </li>
+            </ul>
           </div>
           
         </div>
-        <div class="w-full overflow-hidden">
-          <img class="translate-y-20 translate-x-10" src="./image/assets/illustration.png" alt="">
+        <div id="social" class="flex my-5">
+          <a href=""><div class="bg-white mr-2 h-7 w-7 ring-2 ring-slate-800 rounded-full grid justify-center content-center"><i class="fa-brands fa-instagram"></i></div></a>
+          <div class="bg-white mr-2  h-7 w-7 ring-2 ring-slate-800 rounded-full grid justify-center content-center"><i class="fa-brands fa-facebook"></i></div>
+          <div class="bg-white mr-2  h-7 w-7 ring-2 ring-slate-800 rounded-full grid justify-center content-center"><i class="fa-brands fa-twitter"></i></i></div>
         </div>
-    </div>
-    <div class=" justify-center grid grid-cols-1 md:grid-cols-2 md:justify-center last:justify-end overflow-hidden">
-      <div class="mb-5">
-        <div class="p-3">
-          <p class="text-xl font-semibold">Quis autem</p>
-          <p class="text-4xl font-bold ">Corporis suscipit laboriosam</p>
+        <div class="copyrights">
+          <div class=" " id="copyright">Copyright 2022. All right Reserved.</div>
         </div>
-        <div class="accordion accordion-flush" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingOne">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                <p class="font-bold">Totam rem aperiam</p>
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingTwo">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                <p class="font-bold">Eaque ipsa quae</p>
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-            </div>
-          </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header" id="flush-headingThree">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                <p class="font-bold">Inventore veritatis</p>
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</div>
-            </div>
-          </div>
         </div>
       </div>
-      <div class=" bg-gradient-to-tr from-violet-900 to bg-pink-900 rounded-sm ml-auto mb-5" style="width: 355px; height: 272px;">
-        <!--<img class="rounded-sm translate-x-5 -translate-y-5 " src="./image/s1/Bitmap (1).png" alt="">-->
-        <div class="rounded-sm translate-x-5 -translate-y-5">
-          <iframe width="355px" height="272px" src="https://www.youtube.com/embed/Jox6R5-rIH0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-      </div>
-    </div>
-    <div class="h-auto w-screen py-5 bg-violet-200 ">
-        <div class=" w-screen grid grid-col-1 justify-center">
-            <div class="p-5">
-              <p class="font-bold text-2xl mb-5">Nisi ut aliquid</p>
-              <p class="font-bold text-5xl mb-5">Ullam corporis suscipit</p>
-              <p class="text-xm text-gray-600 mb-3">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
-            </div>
-            <div class="grid grid-cols-1 w-full">
-              <div class="px-5 mb-5 ">
-                <img class="w-full h-auto" src="./image/hero/Bitmap.png">
-              </div>
-              <div class="px-5 mb-5 ">
-                <img class="w-full h-auto" src="./image/hero/Bitmap (1).png">
-              </div>
-              <div class="px-5 mb-5 ">
-                <img class="w-full h-auto" src="./image/hero/Bitmap (2).png">
-              </div>
-            </div>
-            <div class="flex justify-center">
-              <button class="bg-violet-400 hover:bg-gradient-to-tr from-violet-700 to-violet-500 text-white p-2 rounded-full h-12 mx-auto w-1/2">
-                All Works
-              </button>
-            </div>
-        </div>
-    </div>
-    
-    <div class=" bg-white p-5 ">
-      <p class="text-center text-5xl font-bold mb-5">Fugiat quo</p>
-      <p class="text-center text-sm font-bold mb-5">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
-      <div class="sm:grid grid-cols-2 grid-rows-3 md:grid-cols-3 md:grid-rows-2">
-        <div class="mb-5 px-5">
-          <img class="mx-auto" src="./image/assets/Group.png">
-          <p class="text-xl text-center font-bold my-2">Consequuntur</p>
-          <p class="text-center p-1 ">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-        </div>
-        <div class="mb-5 px-5">
-          <img class="mx-auto"  src="./image/assets/Group 2.png">
-          <p class="text-xl text-center font-bold my-2">Consequuntur</p>
-          <p class="text-center p-1 ">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-        </div>
-        <div class="mb-5 px-5">
-          <img class="mx-auto" src="./image/assets/Group 3.png">
-          <p class="text-xl text-center font-bold my-2">Consequuntur</p>
-          <p class="text-center p-1 ">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-        </div>
-        <div class="mb-5 px-5">
-          <img class="mx-auto" src="./image/assets/Group 4.png">
-          <p class="text-xl text-center font-bold my-2">Consequuntur</p>
-          <p class="text-center p-1 ">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-        </div>
-        <div class="mb-5 px-5">
-          <img class="mx-auto" src="./image/assets/Group 5.png">
-          <p class="text-xl text-center font-bold my-2">Consequuntur</p>
-          <p class="text-center p-1 ">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-        </div>
-        <div class="mb-5 px-5">
-          <img class="mx-auto" src="./image/assets/Group 6.png">
-          <p class="text-xl text-center font-bold my-2">Consequuntur</p>
-          <p class="text-center p-1">Enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit</p>
-        </div>
-      </div>
-    </div>
-    <div class="bg-indigo-700 p-5 overflow-x-hidden">
-      
-      <div class="mb-5 w-full h-96 mx-auto overflow-hidden rBackground relative">
-        <img class="-translate-x-5 -translate-y-5 scale-75 hover:scale-90" src="./image/s3/Oval.png">
-        <img class="translate-x-44 -translate-y-56 scale-75 hover:scale-90" src="./image/s3/Oval-1.png" >
-        <img class="-translate-x-10 -translate-y-80 scale-75 hover:scale-90" src="./image/s3/Oval-2.png" >
-        <img class="-translate-x-oval-3 -translate-y-oval-3 scale-75 hover:scale-90" src="./image/s3/Oval-3.png">
-        <img class="-translate-x-oval-4 -translate-y-oval-4 scale-75 hover:scale-90" src="./image/s3/Oval-4.png">
-      </div>
-      <p class="text-white font-semibold uppercase text-2xl mb-10">Repellendus</p>
-      <p class="text-white mb-10 text-6xl font-bold ">Temporibus 
-        quibusdam</p>
-      <p class="text-white mb-5 font-semibold">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
-      <button class="bg-orange-300 text-white font-semibold py-2 rounded-full w-1/2 mb-10 mt-10 h-14">Our Team</button>
-    </div>
-    <div class=" p-5">
-      <p class="text-4xl mb-5 font-bold text-center text-gray-800 mt-10">Officis debitis</p>
-      <p class="text-center text-lg mb-5 font-semibold">Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repella.</p>
-      <div class="sm:grid grid-cols-3 grid-rows-2">
-        <div class="w-full mb-10 px-5 pt-10 pb-10 shadow-2xl">
-          <img class="mb-5" src="./image/s4/Oval.png" alt="">
-          <p class="mb-5 text-gray-500 text-xl">"Voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis"</p>
-          <p class="text-lg font-bold">Evelyn Allen</p>
-        </div>
-        <div class="w-full mb-10 px-5 pt-10 pb-10 shadow-2xl">
-          <img class="mb-5" src="./image/s4/Oval-1.png" alt="">
-          <p class="mb-5 text-gray-500 text-xl">"Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores"</p>
-          <p class="text-lg font-bold">Malin Quist</p>
-        </div>
-        <div class="w-full mb-10 px-5 pt-10 pb-10 shadow-2xl">
-          <img class="mb-5" src="./image/s4/Oval-2.png" alt="">
-          <p class="mb-5 text-gray-500 text-xl">"Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci numquam eius"</p>
-          <p class=" text-lg font-bold">Pan Su</p>
-        </div>
-      </div>
-      <div class="grid grid-cols-2 grid-rows-3 ">
-        <div class="p-5 flex justify-center">
-          <img src="./image/s4/logo/Bitmap-1.png" alt="" >
-        </div>
-        <div class="p-5 flex justify-center items-center">
-          <img src="./image/s4/logo/Bitmap-2.png" alt="" style="height:17px ;" >
-        </div>
-        <div class="p-5 flex justify-center">
-          <img src="./image/s4/logo/Bitmap-3.png" alt="" >
-        </div>
-        <div class="p-5 flex justify-center">
-          <img src="./image/s4/logo/Bitmap-4.png" alt="">
-        </div>
-        <div class="p-5 flex justify-center">
-          <img src="./image/s4/logo/Bitmap-5.png" alt="" >
-        </div>
-        <div class="p-5 flex justify-center">
-          <img src="./image/s4/logo/Bitmap.png" alt="">
-        </div>
-      </div>
-    </div>
-    <div class="bg-violet-100">
-      <div class="pt-5 pb-10">
-        <div class="p-5">
-          <p class="uppercase font-bold text-gray-800 mb-5">Nisi ut aliquid</p>
-          <p class="text-4xl font-bold text-gray-800 mb-5">Omnis voluptas assumenda</p>
-          <p class="text-gray-800 mb-5">Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est.</p>
-          <div class="mb-10">
-            <button class="w-1/2 bg-purple-400 font-bold rounded-full h-10 text-white">Our Blog</button>
-          </div>
-        </div>
-       
-      <div class="ml-3 bg-gradient-to-tr from-violet-500 to-pink-500" style="height: 316px; width: 329px;">
-        <div class="w-full h-full translate-x-5 -translate-y-5 p-5 grid grid-col-1 items-center rounded-lg" style="background-image:url(./image/afterFooter/cover.png) ; background-size: cover;">
-          <p class="text-white font-bold text-2xl pt-14">Itaque earum rerum</p>
-          <p class="text-gray-400">Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates</p>
-          <div class="flex items-center mt-5">
-            <img src="./image/s4/Oval.png" class="img-fluid rounded-top" alt="">
-            <p class="text-white ml-5 font-bold">Adaora Azubuike</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="h-screen" id="footer" style="background-image: url(./image/footer/footerBG.png);">
-      <div class="p-5 grid grid-cols-1 justify-center">
-        <p class="text-center text-4xl font-bold mb-5">Contact Us</p>
-        <p class="text-center mb-5 font-bold">Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas.</p>
-        <div class="grid grid-col-1 p-1">
-          <input class="px-5 h-10 ring-1 ring-black" placeholder="Your email" type="email">
-          <button class="mx-auto h-10 w-1/2 bg-violet-500 text-white rounded-full mt-5">Send</button>
-        </div>
-        <hr>
-        <div>
-          <ul class="mb-10">
-            <p class="font-bold">Consectetur</p>
-            <li>
-              <a href="">Adipiscing</a>
-            </li>
-            <li>
-              <a href="">Elit</a>
-            </li>
-            <li>
-              <a href="">Eiusmod</a>
-            </li>
-          </ul>
-          <ul class="mb-10">
-            <p class="font-bold">Tempor</p>
-            <li>
-              <a href="">Incididunt</a>
-            </li>
-            <li>
-              <a href="">Labore</a>
-            </li>
-            <li>
-              <a href="">Dolore</a>
-            </li>
-          </ul>
-          <ul class="mb-10">
-            <p class="font-bold">Magna</p>
-            <li>
-              <a href="">Aliqua</a>
-            </li>
-            <li>
-              <a href="">Minim</a>
-            </li>
-            <li>
-              <a href="">Veniam</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div id="social"></div>
-      <div class="p-2 text-center" id="copyright">Copyright 2022. All right Reserved. </div>
-    </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/b1a27e170f.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+  </body>
 </html>
